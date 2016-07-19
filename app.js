@@ -1,5 +1,8 @@
 $(document).ready(function() {
-	
+	$('button[type="submit"]').on("click", function(e) {
+		e.preventDefault;
+		alert('working');
+	});
 });
 //Enter items by clicking "add item" or clicking return
 	//enter text into item field
