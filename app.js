@@ -11,13 +11,12 @@ $(document).ready(function() {
 		$('input').val('');
 		}	
 	});
-	
+	$('ul').on('click', '.shopping-item-toggle', function(e) {
+		$(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
+		e.preventDefault();
+	});
+	$('ul').on('click', '.shopping-item-delete', function(e) {
+		$(this).closest('li').remove();
+		e.preventDefault();
+	});
 });
-//Enter items by clicking "add item" or clicking return
-				//enter nothing to input if field is empty
-//check and uncheck items
-	//use "this" to target specific element
-	//if class not present, add class to span
-	//else remove class
-//rm items using button
-	//rm "this" item from ul
