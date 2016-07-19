@@ -1,7 +1,11 @@
 $(document).ready(function() {
-	$('button[type="submit"]').on("click", function(e) {
-		e.preventDefault;
-		alert('working');
+	$('button[type="submit"]').click(function(e) {
+		e.preventDefault();
+		// alert('working');
+		var userInput = $('input').val();
+		// $('.shopping-list').append(
+		// 	'<li><span class="shopping-item">userInput</span><div class="shopping-item-controls"><button class="shopping-item-toggle"><span class="button-label">check</span></button><button class="shopping-item-delete"><span class="button-label">delete</span></button></div></li>');
+		console.log(userInput);
 	});
 });
 //Enter items by clicking "add item" or clicking return
